@@ -1,0 +1,18 @@
+.landingPage {
+  height: 100%;
+  display: flex;
+  padding-top: 30px;
+}
+.leftContainer {
+  width: 15%;
+  padding-left: 50px;
+}
+
+.mainContainer {
+  width: 62%;
+  margin: 0px 45px;
+  padding: 0px 15px;
+}
+.rightContainer {
+  width: 23%;
+}
