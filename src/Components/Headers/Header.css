@@ -3,21 +3,27 @@
   background-color: #ffffff;
   color: red;
   position: sticky;
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .logo {
-  width: 15%;
-  padding-left: 50px;
-  img {
+  width: 20%;
+  margin-left: 45px;
+  /* margin-right: 30px; */
+  /* img {
     width: 150px;
     height: 50px;
-  }
+  } */
+}
+.logo > img {
+  width: 150px;
+  height: 50px;
+  /* border: 1px solid red; */
 }
 .search {
-  width: 62%;
+  width: 52%;
   height: 25px;
   margin: 10px 45px;
   padding: 5px 15px;
@@ -37,9 +43,10 @@
 }
 
 .nav {
-  width: 23%;
+  width: 28%;
   display: flex;
   color: rgb(40, 39, 39);
+  font-size: 15px;
 }
 .nav_item {
   width: 33%;

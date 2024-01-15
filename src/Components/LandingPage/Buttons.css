@@ -1,0 +1,40 @@
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 20%;
+  position: absolute;
+  bottom: 5vh;
+  left: 0.1%;
+  /* position: relative;
+    bottom: 0;
+    left: 2px; */
+}
+
+.button {
+  padding: 5px;
+  border: 2px solid rgba(242, 129, 35, 255);
+  border-radius: 0.3rem;
+  align-self: center;
+  height: 2rem;
+  /* width: 80%; */
+}
+.button:hover {
+  cursor: pointer;
+}
+
+.login-button {
+  color: rgba(242, 129, 35, 255);
+  background: transparent;
+}
+
+.signup-button {
+  border: none;
+  color: rgba(254, 255, 254, 255);
+  background: rgba(242, 129, 35, 255);
+}
+
+/* .button:disabled {
+    background: silver;
+    pointer-events: none;
+  } */

@@ -4,15 +4,15 @@
   padding-top: 30px;
 }
 .leftContainer {
-  width: 15%;
-  padding-left: 50px;
+  width: 20%;
+  padding-left: 80px;
 }
 
 .mainContainer {
-  width: 62%;
-  margin: 0px 45px;
-  padding: 0px 15px;
+  width: 52%;
+  padding-left: 15px;
 }
 .rightContainer {
-  width: 23%;
+  width: 28%;
+  padding-left: 80px;
 }
