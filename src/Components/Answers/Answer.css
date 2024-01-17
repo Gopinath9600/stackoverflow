@@ -1,0 +1,114 @@
+.answerContainer {
+  width: 100%;
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.answerHeader {
+  width: calc(100% + 25px);
+  display: flex;
+  /* padding: 0; */
+  /* justify-content: right; */
+  .leftSection {
+    width: 30%;
+  }
+  .rightSection {
+    width: 70%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    font-size: 13px;
+    span {
+      padding: 0px 20px 15px;
+      /* border-radius: 5px; */
+    }
+    .active {
+      color: rgba(242, 129, 35, 255);
+      div {
+        background-color: rgba(242, 129, 35, 255);
+        height: 4px;
+        /* width: 80%; */
+        margin-top: 10px;
+        border-radius: 7px;
+      }
+    }
+  }
+}
+.answerCard {
+  width: calc(100% + 30px);
+  /* padding: 10px 15px; */
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 50px;
+}
+.answerInfo {
+  border-radius: 10px 10px 0 0;
+  background-color: rgba(40, 52, 62, 0.05);
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  font-size: 12px;
+  /* span {
+    margin: 0 20px;
+  } */
+}
+.title {
+  width: 75%;
+  margin: 0 0 0 20px;
+}
+.scoreContainer {
+  justify-content: right;
+  width: 25%;
+  display: flex;
+  height: 25px;
+  padding-right: 20px;
+  font-size: 12px;
+  button {
+    width: 30px;
+    height: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(242, 129, 35, 255);
+    border-radius: 5px 0 0 5px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px !important;
+    font-weight: 200 !important;
+  }
+
+  span {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0 10px;
+    background-color: rgba(242, 129, 35, 255);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    color: white;
+  }
+}
+.answerData {
+  background-color: #ffffff;
+  .answerText {
+    margin: 0 20px;
+  }
+  border-radius: 0 0 10px 10px;
+  font-size: 14px;
+}
+.answerAuthor {
+  color: rgba(242, 129, 35, 210);
+  font-weight: bold;
+}
+.answerText {
+  pre {
+    white-space: pre-wrap;
+  }
+  ol {
+    padding: 0 20px;
+  }
+  img {
+    max-width: 95%;
+  }
+}

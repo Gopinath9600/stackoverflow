@@ -1,2 +1,41 @@
-.rightContainer {
+.section {
+  margin-bottom: 20px;
+}
+p {
+  font-family: "Poppins";
+  padding: 20px 0;
+}
+.item {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  width: 250px;
+  &:hover {
+    .score {
+      width: 25px;
+      height: 25px;
+      min-width: 25px;
+      display: flex;
+      padding: 5px;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      color: white;
+      background-color: rgba(242, 129, 35, 255);
+    }
+    color: rgba(242, 129, 35, 255);
+  }
+}
+
+.score {
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+  background-color: rgba(40, 52, 62, 0.05);
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
 }
