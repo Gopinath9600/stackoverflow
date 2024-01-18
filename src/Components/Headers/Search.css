@@ -23,27 +23,42 @@ input {
 }
 
 .searchResults {
-  background-color: rgb(93, 91, 91);
-
+  background-color: white;
   border-radius: 0 0 10px 10px;
-  padding: 0px 15px;
+  /* padding: 0px 15px; */
   position: absolute;
+  transform: translate(-4px, 15px);
   top: 45px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 45.9%;
+  width: 48%;
 }
 
 .searchItem {
-  color: rgb(240, 234, 234);
+  color: black;
   font-size: 12px;
-  padding: 5px;
+  padding: 10px 15px;
   border-bottom: 1px solid #a7a3a3d1;
-  transition: background-color 0.3s ease;
-}
+  &:hover {
+    /* border: 2px solid rgb(242, 129, 35); */
+    cursor: pointer;
+    span {
+      scale: 1.02;
+      color: rgb(242, 129, 35);
+    }
+    /* overflow: hidden; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 
-.searchItem:hover {
-  background-color: rgba(242, 129, 35, 255);
-  color: rgb(40, 37, 37);
+    /* color: white; */
+  }
+
+  span {
+    width: 100%;
+    display: inline-block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
 }
 
 .searchItem:last-child {

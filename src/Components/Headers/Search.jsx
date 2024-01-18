@@ -65,14 +65,13 @@ const Search = () => {
           value={searchTerm}
           onChange={handleInputChange}
         />
-      </div>
-
-      <div className="searchResults">
-        {searchResults.map((result) => (
-          <div key={result.question_id} className="searchItem">
-            {result.title}
-          </div>
-        ))}
+        <div className="searchResults">
+          {searchResults.map((result) => (
+            <div key={result.question_id} className="searchItem">
+              <span> {result.title}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
