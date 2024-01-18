@@ -72,9 +72,8 @@
   font-weight: 600;
   color: white;
   .leftSection {
-    display: flex;
     padding: 0px 15px;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     img {
@@ -98,9 +97,8 @@
   }
   .rightSection {
     justify-self: right;
-    display: flex;
+    display: flex !important;
     padding: 0px 25px;
-    display: flex;
     justify-content: right;
     align-items: center;
     span {
