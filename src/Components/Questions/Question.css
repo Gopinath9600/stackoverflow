@@ -15,7 +15,7 @@
   display: flex;
   border-bottom: 1px solid white;
   .title {
-    display: flex;
+    display: flex !important;
     justify-content: right;
     padding-left: 10px;
     .tit {
@@ -89,6 +89,7 @@
       padding: 0 15px;
     }
     .reputation {
+      display: flex;
       background-color: rgba(255, 255, 255, 0.2);
       border-radius: 8px;
       height: 28px;
