@@ -12,12 +12,6 @@ export const Header = () => {
         <img src={Logo} alt="" className="logo" />
       </div>
 
-      {/* <FontAwesomeIcon
-          icon={faMagnifyingGlass}
-          color="black"
-          style={{ opacity: 0.7, padding: "0 5px" }}
-        /> */}
-      {/* <input type="text" placeholder="Search" /> */}
       <Search />
 
       <div className="nav">

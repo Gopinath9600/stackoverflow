@@ -20,9 +20,7 @@ export const MainContainer = () => {
   }, [questionData, answerData]);
   return (
     <div className="mainContainer" style={{ width: "100%", marginTop: "60px" }}>
-      {/* <div className="questionSection"> */}
       <Question questionData={questionData} />
-      {/* </div> */}
       <Answer answerData={answerData} />
       <div className="answerSection"></div>
     </div>

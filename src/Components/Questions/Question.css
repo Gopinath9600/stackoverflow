@@ -29,7 +29,6 @@
       justify-self: right;
       opacity: 0.15;
       transform: translate(55px, -20px);
-      /* align-items: righ; */
     }
     width: 75%;
   }
@@ -75,7 +74,6 @@
   .leftSection {
     display: flex;
     padding: 0px 15px;
-    /* width: 35%; */
     display: flex;
     justify-content: center;
     align-items: center;
