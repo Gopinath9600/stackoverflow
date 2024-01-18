@@ -1,7 +1,7 @@
 export const getSearches = async () => {
   const apiUrl =
-    "https://api.stackexchange.com/2.3/questions?order=desc&sort=activity&site=stackoverflow";
-  ("https://api.stackexchange.com/2.3/search?order=desc&sort=activity&intitle=vscode&site=stackoverflow");
+    "https://api.stackexchange.com/2.3/search?order=desc&sort=activity&intitle=vscode&site=stackoverflow";
+
   try {
     const response = await fetch(apiUrl);
     // console.log(response);

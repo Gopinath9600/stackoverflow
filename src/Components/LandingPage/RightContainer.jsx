@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import { linkedData } from "./RightContainerData";
 import "./RightContainer.css";
 import {
   getLinkedById,

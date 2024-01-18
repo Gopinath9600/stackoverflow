@@ -6,9 +6,6 @@
   position: absolute;
   bottom: 5vh;
   left: 0.1%;
-  /* position: relative;
-    bottom: 0;
-    left: 2px; */
 }
 
 .button {
@@ -17,7 +14,6 @@
   border-radius: 0.3rem;
   align-self: center;
   height: 2rem;
-  /* width: 80%; */
 }
 .button:hover {
   cursor: pointer;

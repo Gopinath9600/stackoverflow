@@ -4,7 +4,8 @@ import Home from "../../Assets/Icons/home-icon.png";
 import Globe from "../../Assets/Icons/globe-icon.png";
 import People from "../../Assets/Icons/people-icon.png";
 import Portfolio from "../../Assets/Icons/portfolio-icon.png";
-import DownArrow from "../../Assets/Icons/down-arrow.png";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const LeftContainer = () => {
   const [isPeopleMenuOpen, setPeopleMenuOpen] = useState(false);
@@ -28,9 +29,9 @@ export const LeftContainer = () => {
           <div className="menu-item">
             <img src={Globe} alt="" />
             <span>People</span>
-            <img
-              src={DownArrow}
-              alt=""
+            <FontAwesomeIcon
+              icon={faAngleDown}
+              style={{ opacity: "0.6" }}
               className={`arrow-icon ${isPeopleMenuOpen ? "up" : "down"}`}
             />
           </div>

@@ -8,8 +8,6 @@
 .answerHeader {
   width: calc(100% + 25px);
   display: flex;
-  /* padding: 0; */
-  /* justify-content: right; */
   .leftSection {
     width: 30%;
   }
@@ -21,14 +19,12 @@
     font-size: 13px;
     span {
       padding: 0px 20px 15px;
-      /* border-radius: 5px; */
     }
     .active {
       color: rgba(242, 129, 35, 255);
       div {
         background-color: rgba(242, 129, 35, 255);
         height: 4px;
-        /* width: 80%; */
         margin-top: 10px;
         border-radius: 7px;
       }
@@ -37,7 +33,6 @@
 }
 .answerCard {
   width: calc(100% + 30px);
-  /* padding: 10px 15px; */
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 10px 10px;
   margin-bottom: 50px;
@@ -49,9 +44,6 @@
   padding: 30px 0;
   display: flex;
   font-size: 12px;
-  /* span {
-    margin: 0 20px;
-  } */
 }
 .title {
   width: 75%;

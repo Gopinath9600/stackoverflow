@@ -52,7 +52,7 @@
     content: "";
     position: absolute;
     top: -3px;
-    right: 40px;
+    right: 0px;
     height: 30px;
     width: 3px;
     background-color: #f28123;
@@ -66,7 +66,7 @@
 }
 
 .arrow-icon {
-  margin-left: 70px;
+  margin-left: 60px;
   transition: transform 0.3s ease;
 }
 
@@ -108,8 +108,3 @@
   color: rgba(254, 255, 254, 255);
   background: rgba(242, 129, 35, 255);
 }
-
-/* .button:disabled {
-  background: silver;
-  pointer-events: none;
-} */

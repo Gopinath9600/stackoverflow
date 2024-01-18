@@ -35,50 +35,6 @@ export const getQuestionsById = async (questionId) => {
   }
 };
 
-// export const getAnswers = async (
-//   questionId,
-//   sort = "votes",
-//   order = "desc"
-// ) => {
-//   const apiUrl = `https://api.stackexchange.com/2.3/questions/${questionId}/answers?order=${order}&sort=${sort}&site=stackoverflow`;
-
-//   try {
-//     const response = await fetch(apiUrl);
-//     // console.log(response);
-//     if (!response.ok) {
-//       throw new Error(`HTTP error! Status: ${response.status}`);
-//     }
-
-//     const data = await response.json();
-//     return data;
-//   } catch (error) {
-//     console.error("Error fetching data:", error);
-//     throw error;
-//   }
-// };
-
-// export const getAnswersById = async (
-//   answerId,
-//   sort = "votes",
-//   order = "desc"
-// ) => {
-//   const apiUrl = `https://api.stackexchange.com/2.3/answers/${answerId}?order=${order}&sort=${sort}&site=stackoverflow`;
-
-//   try {
-//     const response = await fetch(apiUrl);
-//     // console.log(response);
-//     if (!response.ok) {
-//       throw new Error(`HTTP error! Status: ${response.status}`);
-//     }
-
-//     const data = await response.json();
-//     return data;
-//   } catch (error) {
-//     console.error("Error fetching data:", error);
-//     throw error;
-//   }
-// };
-
 export const getLinkedById = async (
   questionId,
   sort = "votes",

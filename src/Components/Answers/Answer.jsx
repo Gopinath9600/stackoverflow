@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { getAnswers, getAnswersById } from "../../Services/QuestionsServices";
+import React from "react";
 import "./Answer.css";
 export const Answer = ({ answerData }) => {
   const convertTimestamp = (timestamp) => {
