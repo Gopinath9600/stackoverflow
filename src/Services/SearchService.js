@@ -1,6 +1,5 @@
-export const getSearches = async () => {
-  const apiUrl =
-    "https://api.stackexchange.com/2.3/search?order=desc&sort=activity&intitle=vscode&site=stackoverflow";
+export const getSearches = async (searchTerm) => {
+  const apiUrl = `https://api.stackexchange.com/2.3/search?order=desc&sort=activity&intitle=${searchTerm}&site=stackoverflow`;
 
   try {
     const response = await fetch(apiUrl);

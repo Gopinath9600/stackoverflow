@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "./Search.css";
+import { getSearches } from "../../Services/SearchService";
 
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -13,21 +14,14 @@ const Search = () => {
   };
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          `https://api.stackexchange.com/2.3/search?order=desc&sort=activity&intitle=${searchTerm}&site=stackoverflow`
-        );
-        const data = await response.json();
-
-        if (data.items) {
-          setSearchResults(data.items.slice(0, 5));
-        } else {
-          setSearchResults([]);
-        }
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
+    const fetchData = () => {
+      getSearches(searchTerm)
+        .then((res) => {
+          setSearchResults(res.items.splice(0, 5));
+        })
+        .catch((error) => {
+          console.error("Error fetching data:", error);
+        });
     };
 
     if (searchTerm.trim() !== "") {
