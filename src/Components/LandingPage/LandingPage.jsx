@@ -4,7 +4,7 @@ import { LeftContainer } from "./LeftContainer";
 import { RightContainer } from "./RightContainer";
 import { MainContainer } from "./MainContainer";
 
-export const LandingPage = () => {
+export const LandingPage = ({ selectedQuestionId }) => {
   const [questionId, setQuestionId] = useState("56199111");
   console.log(questionId);
   return (
@@ -14,7 +14,7 @@ export const LandingPage = () => {
       </div>
 
       <div className="mainContainer">
-        <MainContainer />
+        <MainContainer selectedQuestionId={selectedQuestionId} />
       </div>
       <div className="rightContainer">
         <RightContainer questionId={questionId} />

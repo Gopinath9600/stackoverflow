@@ -3,17 +3,19 @@ import { Question } from "../Questions/Question";
 import { Answer } from "../Answers/Answer";
 import { getQuestionsById } from "../../Services/QuestionsServices";
 
-export const MainContainer = () => {
+export const MainContainer = ({ selectedQuestionId }) => {
   const [questionData, setQuestionData] = useState({});
   const [answerData, setAnswerData] = useState([]);
   useEffect(() => {
-    getQuestionsById(56199111)
-      .then((res) => {
-        setQuestionData(res.items[0]);
-        setAnswerData(res.items[0]?.answers);
-      })
-      .catch((err) => console.log(err));
-  }, []);
+    if (selectedQuestionId) {
+      getQuestionsById(selectedQuestionId)
+        .then((res) => {
+          setQuestionData(res.items[0]);
+          setAnswerData(res.items[0]?.answers);
+        })
+        .catch((err) => console.log(err));
+    }
+  }, [selectedQuestionId]);
 
   useEffect(() => {
     console.log(questionData, answerData);

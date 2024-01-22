@@ -57,7 +57,7 @@ export const Question = ({ questionData }) => {
         </div>
         <div className="scoreContainer">
           <button>-</button>
-          <span>{questionData?.score}</span>
+          <span>{questionData.score}</span>
           <button style={{ transform: "rotateY(180deg)" }}>+</button>
         </div>
         {console.log(questionData)}

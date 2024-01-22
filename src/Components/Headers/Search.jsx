@@ -4,7 +4,7 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "./Search.css";
 import { getSearches } from "../../Services/SearchService";
 
-const Search = () => {
+const Search = ({ onSearchItemClick }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const searchRef = useRef(null);
@@ -61,7 +61,13 @@ const Search = () => {
         />
         <div className="searchResults">
           {searchResults.map((result) => (
-            <div key={result.question_id} className="searchItem">
+            <div
+              key={result.question_id}
+              className="searchItem"
+              onClick={() => {
+                onSearchItemClick(result.question_id);
+              }}
+            >
               <span> {result.title}</span>
             </div>
           ))}

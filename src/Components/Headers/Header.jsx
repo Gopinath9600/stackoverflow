@@ -1,18 +1,16 @@
 import React from "react";
 import "./Header.css";
 import Logo from "../../Assets/Icons/logo-stackoverflow.svg";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import Search from "./Search";
 
-export const Header = () => {
+export const Header = ({ onSearchItemClick }) => {
   return (
     <div className="header">
       <div className="logo">
         <img src={Logo} alt="" className="logo" />
       </div>
 
-      <Search />
+      <Search onSearchItemClick={onSearchItemClick} />
 
       <div className="nav">
         <div className="nav_item">About</div>
