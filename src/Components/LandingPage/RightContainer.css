@@ -39,3 +39,8 @@ p {
   align-items: center;
   margin-right: 10px;
 }
+
+.no-data {
+  font-size: 12px;
+  padding-left: 10px;
+}

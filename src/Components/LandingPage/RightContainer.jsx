@@ -5,48 +5,59 @@ import {
   getRelatedById,
 } from "../../Services/QuestionsServices";
 
-export const RightContainer = ({ questionId }) => {
+export const RightContainer = ({ selectedQuestionId, onItemClick }) => {
   const [linkedData, setLinkedData] = useState([]);
   const [relatedData, setRelatedData] = useState([]);
+
   useEffect(() => {
-    getLinkedById(questionId)
+    getLinkedById(selectedQuestionId)
       .then((res) => {
-        console.log(res);
         setLinkedData(res.items);
       })
       .catch((err) => console.log(err));
-    getRelatedById(questionId)
+
+    getRelatedById(selectedQuestionId)
       .then((res) => {
-        console.log(res);
         setRelatedData(res.items);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [selectedQuestionId]);
+
   return (
     <div className="right-container" style={{ marginTop: "70px" }}>
       <div className="section linked">
         <p>Linked</p>
-        {linkedData?.map(
-          (item, index) =>
-            index < 5 && (
-              <div key={index} className="item">
-                <span className="score">{item.score}</span>
-                <span className="text">{item.title}</span>
-              </div>
-            )
+        {linkedData?.length > 0 ? (
+          linkedData.slice(0, 5).map((item, index) => (
+            <div
+              key={index}
+              className="item"
+              onClick={() => onItemClick(item.question_id)}
+            >
+              <span className="score">{item.score}</span>
+              <span className="text">{item.title}</span>
+            </div>
+          ))
+        ) : (
+          <div className="no-data">No data found</div>
         )}
       </div>
 
       <div className="section related">
         <p>Related</p>
-        {relatedData?.map(
-          (item, index) =>
-            index < 5 && (
-              <div key={index} className="item">
-                <span className="score">{item.score}</span>
-                <span className="text">{item.title}</span>
-              </div>
-            )
+        {relatedData?.length > 0 ? (
+          relatedData.slice(0, 5).map((item, index) => (
+            <div
+              key={index}
+              className="item"
+              onClick={() => onItemClick(item.question_id)}
+            >
+              <span className="score">{item.score}</span>
+              <span className="text">{item.title}</span>
+            </div>
+          ))
+        ) : (
+          <div className="no-data">No data found</div>
         )}
       </div>
     </div>

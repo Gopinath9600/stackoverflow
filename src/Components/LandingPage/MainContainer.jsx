@@ -20,11 +20,11 @@ export const MainContainer = ({ selectedQuestionId }) => {
   useEffect(() => {
     console.log(questionData, answerData);
   }, [questionData, answerData]);
+
   return (
     <div className="mainContainer" style={{ width: "100%", marginTop: "60px" }}>
       <Question questionData={questionData} />
       <Answer answerData={answerData} />
-      <div className="answerSection"></div>
     </div>
   );
 };

@@ -12,7 +12,10 @@ function App() {
   return (
     <div>
       <Header onSearchItemClick={handleSearchItemClick} />
-      <LandingPage selectedQuestionId={selectedQuestionId} />
+      <LandingPage
+        selectedQuestionId={selectedQuestionId}
+        onSearchItemClick={handleSearchItemClick}
+      />
     </div>
   );
 }

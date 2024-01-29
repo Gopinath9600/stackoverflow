@@ -18,7 +18,7 @@ export const Answer = ({ answerData }) => {
     <div className="answerContainer">
       {console.log(answerData)}
       <div className="answerHeader">
-        <span className="leftSection">{answerData?.length} Answers</span>
+        <span className="leftSection">{answerData?.length || 0} Answers</span>
         <div className="rightSection">
           <span className="active">
             Votes <div />
