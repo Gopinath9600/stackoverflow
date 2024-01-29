@@ -1,9 +1,11 @@
+/* .questionContainer */
 .questionContainer {
   width: 100%;
   border-radius: 15px;
   background-color: #ffffff;
 }
 
+/* .questionHeader */
 .questionHeader {
   padding: 25px 15px;
   background-color: rgba(242, 129, 35, 255);
@@ -14,55 +16,61 @@
   font-size: 14px;
   display: flex;
   border-bottom: 1px solid white;
-  .title {
-    display: flex !important;
-    justify-content: right;
-    padding-left: 10px;
-    .tit {
-      width: 100%;
-      text-align: left;
-    }
-    img {
-      position: absolute;
-      width: 80px;
-      height: 80px;
-      justify-self: right;
-      opacity: 0.15;
-      transform: translate(55px, -20px);
-    }
-    width: 75%;
-  }
-  .scoreContainer {
-    justify-content: right;
-    width: 25%;
-    display: flex;
-    height: 25px;
-    padding-right: 20px;
-
-    button {
-      width: 30px;
-      height: 25px;
-      border: 1px solid rgba(255, 255, 255, 0.6);
-      background-color: transparent;
-      border-radius: 5px 0 0 5px;
-      color: white;
-      cursor: pointer;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-    }
-    span {
-      padding: 0px 10px;
-      margin: 0px;
-      font-size: 12px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-top: 1px solid rgba(255, 255, 255, 0.6);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-    }
-  }
 }
 
+.questionHeader .title {
+  display: flex;
+  justify-content: right;
+  padding-left: 10px;
+  width: 75%;
+}
+
+.questionHeader .title .tit {
+  width: 100%;
+  text-align: left;
+}
+
+.questionHeader .title img {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  justify-self: right;
+  opacity: 0.15;
+  transform: translate(55px, -20px);
+}
+
+.questionHeader .scoreContainer {
+  justify-content: right;
+  width: 25%;
+  display: flex;
+  height: 25px;
+  padding-right: 20px;
+}
+
+.questionHeader .scoreContainer button {
+  width: 30px;
+  height: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border-radius: 5px 0 0 5px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.questionHeader .scoreContainer span {
+  padding: 0px 10px;
+  margin: 0px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* .userContainer */
 .userContainer {
   padding: 10px 15px;
   background-color: rgba(242, 129, 35, 255);
@@ -71,106 +79,124 @@
   font-size: 12px;
   font-weight: 600;
   color: white;
-  .leftSection {
-    padding: 0px 15px;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    img {
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-    }
-    span {
-      font-size: 11px;
-      display: flex !important;
-      justify-content: center;
-      align-items: center;
-      padding: 0 15px;
-    }
-    .reputation {
-      display: flex;
-      background-color: rgba(255, 255, 255, 0.2);
-      border-radius: 8px;
-      height: 28px;
-      padding: 0 10px;
-    }
-  }
-  .rightSection {
-    justify-self: right;
-    display: flex !important;
-    padding: 0px 25px;
-    justify-content: right;
-    align-items: center;
-    span {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 10px;
-      font-weight: 500;
-      display: inline;
-      justify-content: center;
-      align-items: center;
-      padding: 0 10px;
-    }
-  }
 }
+
+.userContainer .leftSection {
+  padding: 0px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userContainer .leftSection img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.userContainer .leftSection span {
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.userContainer .leftSection .reputation {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  height: 28px;
+  padding: 0 10px;
+}
+
+.userContainer .rightSection {
+  justify-self: right;
+  display: flex;
+  padding: 0px 25px;
+  justify-content: right;
+  align-items: center;
+}
+
+.userContainer .rightSection span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 0 10px;
+}
+
+/* .questionInfo */
 .questionInfo {
   font-size: 14px;
   width: 100%;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   padding: 25px 15px;
-
   border-radius: 0 0 10px 10px;
-  p {
-    padding: 0 10px;
-    max-width: 100%;
-  }
-  pre {
-    white-space: pre-wrap;
-  }
-  ol {
-    padding: 0 20px;
-  }
-  img {
-    max-width: 95%;
-  }
-  blockquote {
-    background-color: rgba(40, 52, 62, 0.05);
-    padding: 10px;
-    margin: 10px;
-  }
-
-  .questionBottom {
-    margin: 25px 10px 5px 10px;
-    display: flex;
-    align-items: center;
-    color: rgba(242, 129, 35, 255);
-    .bookmark {
-      color: rgba(242, 129, 35, 255);
-      height: 40px;
-      width: 15px;
-    }
-    img {
-      width: 20px;
-      height: 20px;
-    }
-    span {
-      margin-left: 10px;
-      font-weight: bold;
-    }
-  }
 }
+
+.questionInfo p {
+  padding: 0 10px;
+  max-width: 100%;
+}
+
+.questionInfo pre {
+  white-space: pre-wrap;
+}
+
+.questionInfo ol {
+  padding: 0 20px;
+}
+
+.questionInfo img {
+  max-width: 95%;
+}
+
+.questionInfo blockquote {
+  background-color: rgba(40, 52, 62, 0.05);
+  padding: 10px;
+  margin: 10px;
+}
+
+.questionInfo .questionBottom {
+  margin: 25px 10px 5px 10px;
+  display: flex;
+  align-items: center;
+  color: rgba(242, 129, 35, 255);
+}
+
+.questionInfo .questionBottom .bookmark {
+  color: rgba(242, 129, 35, 255);
+  height: 40px;
+  width: 15px;
+}
+
+.questionInfo .questionBottom img {
+  width: 20px;
+  height: 20px;
+}
+
+.questionInfo .questionBottom span {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+/* .comment */
 .comment {
   width: 25px;
   height: 25px;
 }
+
+/* .left */
 .left {
   width: 50%;
   display: flex;
   justify-content: left;
   align-items: center;
 }
+
+/* .right */
 .right {
   width: 50%;
   gap: 1.5rem;
