@@ -19,7 +19,7 @@
 }
 
 .questionHeader .title {
-  display: flex;
+  display: flex !important;
   justify-content: right;
   padding-left: 10px;
   width: 75%;
